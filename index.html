@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link href="css/reset.css" rel="stylesheet">
+    <link href="assets/fa/css/all.css" rel="stylesheet">
+    <link href="css/styles.css" rel="stylesheet"> 
+</head>
+<body>
+    <header>
+        <div class="header-wrap contain">
+            <a href="#" class="ham"><i class="fa fa-bars"></i></a>
+            <a href="#" class="icon"><i class="fa fa-user"></i></a>
+        </div>
+    </header>
+    <section class="hero">
+        <div class="contain">
+            <h1>To-do List</h1>
+        </div>
+    </section>
+    <section class="tasks">
+        <div class="contain">
+            <div id="tasks-create">
+
+                
+            </div>
+            <h3 id="completed-title" class="hidden"><span id="completed-number"></span>Completed Task<span id="completed-plural" class="hidden">s</span></h3>
+            <div id="tasks-complete">
+                
+            </div>
+
+            <div class="add-task">
+                <div class="button-wrap">
+                    <button id="prompt-click" class="button border-glow">+</button>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section id="prompt" class="hidden">
+        <div class="contain">
+            <div class="prompt-wrap">
+                <div class="box border-glow">
+                    <div class="box-heading">
+                        <h2>Task Item Info</h2>
+                        <a href="#" class="prompt-close">X</a>
+                    </div>
+                    <form>
+                        <div class="input-wrap">
+                            <label for="name">Name</label>
+                            <input id="input-name" type="text" onfocus="clearInput(this)">
+                        </div>
+
+                        <div class="input-wrap">
+                            <label for="name">Description</label>
+                            <input id="input-desc" type="text" onfocus="clearInput(this)">
+                        </div>
+                        <button id="prompt-submit" class="button submit" type="submit">Update</button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <script type="text/javascript" src="scripts/script.js"></script>
+</body>
+</html>
