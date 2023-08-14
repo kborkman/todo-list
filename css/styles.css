@@ -61,10 +61,8 @@ button {
   width: 100%;
   top: 0;
   padding: 0;
-  transition: all 0.3s; }
-  #prompt.blur {
-    background-color: rgba(0, 0, 0, 0.75);
-    overflow: hidden; }
+  transition: all 0.3s;
+  background-color: rgba(0, 0, 0, 0.5); }
   #prompt .contain {
     height: 100%; }
 
@@ -127,8 +125,7 @@ button {
     text-decoration: line-through; }
 
 .tasks-left {
-  width: 100%;
-  pointer-events: none; }
+  width: 100%; }
 
 .tasks-right {
   display: flex;
